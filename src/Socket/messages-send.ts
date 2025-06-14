@@ -857,7 +857,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 				}
 			}
 			if (typeof content === "string") {
-				content = { text: content } as AnyMessageContent
+				content = { text: content }
 			}
 			if(
 				typeof content === 'object' &&
