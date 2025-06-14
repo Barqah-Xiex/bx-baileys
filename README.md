@@ -29,23 +29,23 @@ The original repository was initially removed by its creator and subsequently ta
 Install in package.json:
 ```json
 "dependencies": {
-    "baileys": "github:Barqah-Xiex/bx-baileys"
+    "bx-baileys": "github:Barqah-Xiex/bx-baileys"
 }
 ```
 or install in terminal:
 ```
-npm install baileys@github:Barqah-Xiex/bx-baileys
+npm install github:Barqah-Xiex/bx-baileys
 ```
 
 Then import the default function in your code:
 ```ts 
 // type esm
-import makeWASocket from 'baileys'
+import makeWASocket from 'bx-baileys'
 ```
 
 ```js
 // type cjs
-const { default: makeWASocket } = require("baileys")
+const { default: makeWASocket } = require("bx-baileys")
 ```
 
 ## Added Features and Improvements
