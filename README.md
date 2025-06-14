@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://xiex.my.id/image/gambar/wallpaper.png" />
+  <img src="https://xiex.my.id/image/gambar/wallpaper-mini.jpg" />
 
 </div>
 
