@@ -856,9 +856,6 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 					options.ephemeralExpiration = expiration
 				}
 			}
-			if (typeof content === "string") {
-				content = { text: content }
-			}
 			if(
 				typeof content === 'object' &&
 				'disappearingMessagesInChat' in content &&
