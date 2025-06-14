@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from 'axios';
+import { AxiosRequestConfig } from 'axios';
 import { KeyPair, SignedKeyPair, SocketConfig } from '../Types';
 export declare const makeRegistrationSocket: (config: SocketConfig) => {
     register: (code: string) => Promise<ExistsResponse>;
@@ -25,7 +25,7 @@ export declare const makeRegistrationSocket: (config: SocketConfig) => {
         toJid: string;
         isVideo: boolean;
     }>;
-    fetchMessageHistory: (count: number, oldestMsgKey: import("../Types").WAMessageKey, oldestMsgTimestamp: number | axios) => Promise<string>;
+    fetchMessageHistory: (count: number, oldestMsgKey: import("../Types").WAMessageKey, oldestMsgTimestamp: number | Long) => Promise<string>;
     requestPlaceholderResend: (messageKey: import("../Types").WAMessageKey) => Promise<"RESOLVED" | string | undefined>;
     getPrivacyTokens: (jids: string[]) => Promise<any>;
     assertSessions: (jids: string[], force: boolean) => Promise<boolean>;
@@ -165,7 +165,7 @@ export declare const makeRegistrationSocket: (config: SocketConfig) => {
     sendNode: (frame: import("../WABinary").BinaryNode) => Promise<void>;
     logout: (msg?: string) => Promise<void>;
     end: (error: Error | undefined) => void;
-    onUnexpectedError: (err: Error | axios, msg: string) => void;
+    onUnexpectedError: (err: Error | import("@hapi/boom").Boom, msg: string) => void;
     uploadPreKeys: (count?: number) => Promise<void>;
     uploadPreKeysToServerIfRequired: () => Promise<void>;
     requestPairingCode: (phoneNumber: string, pairCode: string) => Promise<string>;

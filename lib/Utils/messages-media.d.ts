@@ -10,10 +10,10 @@ export declare const hkdfInfoKey: (type: MediaType) => string;
 /** generates all the keys required to encrypt/decrypt & sign a media message */
 export declare function getMediaKeys(buffer: Uint8Array | string | null | undefined, mediaType: MediaType): Promise<MediaDecryptionKeyInfo>;
 export declare const extractImageThumb: (bufferOrFilePath: Readable | Buffer | string, width?: number) => Promise<{
-    buffer: any;
+    buffer: Buffer<ArrayBufferLike>;
     original: {
-        width: any;
-        height: any;
+        width: number;
+        height: number;
     };
 }>;
 export declare const encodeBase64EncodedStringForUpload: (b64: string) => string;
@@ -22,7 +22,7 @@ export declare const generateProfilePicture: (mediaUpload: WAMediaUpload) => Pro
 }>;
 /** gets the SHA256 of the given media message */
 export declare const mediaMessageSHA256B64: (message: WAMessageContent) => string | null | undefined;
-export declare function getAudioDuration(buffer: Buffer | string | Readable): Promise<any>;
+export declare function getAudioDuration(buffer: Buffer | string | Readable): Promise<number | undefined>;
 /**
   referenced from and modifying https://github.com/wppconnect-team/wa-js/blob/main/src/chat/functions/prepareAudioWaveform.ts
  */

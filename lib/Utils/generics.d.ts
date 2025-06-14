@@ -13,7 +13,7 @@ export declare const getKeyAuthor: (key: proto.IMessageKey | undefined | null, m
 export declare const writeRandomPadMax16: (msg: Uint8Array) => Buffer<ArrayBuffer>;
 export declare const unpadRandomMax16: (e: Uint8Array | Buffer) => Uint8Array<ArrayBuffer>;
 export declare const encodeWAMessage: (message: proto.IMessage) => Buffer<ArrayBuffer>;
-export declare const encodeNewsletterMessage: (message: proto.IMessage) => any;
+export declare const encodeNewsletterMessage: (message: proto.IMessage) => Uint8Array<ArrayBufferLike>;
 export declare const generateRegistrationId: () => number;
 export declare const encodeBigEndian: (e: number, t?: number) => Uint8Array<ArrayBuffer>;
 export declare const toNumber: (t: Long | number | null | undefined) => number;
@@ -42,7 +42,7 @@ export declare const printQRIfNecessaryListener: (ev: BaileysEventEmitter, logge
  * Use to ensure your WA connection is always on the latest version
  */
 export declare const fetchLatestBaileysVersion: (options?: AxiosRequestConfig<any>) => Promise<{
-    version: any;
+    version: WAVersion;
     isLatest: boolean;
     error?: undefined;
 } | {
