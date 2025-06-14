@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://xiex.my.id/image/gambar/wallpaper.png?date=14juni2025" />
+  <img src="https://xiex.my.id/image/bannernormal.png" />
 
 </div>
 
