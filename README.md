@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://xiex.my.id/image/bannernormal.png" />
+  <img src="https://ibb.co/pB7HtKnY" />
 
 </div>
 
