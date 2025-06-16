@@ -41,7 +41,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-*autocommit.sh*
+*autocommit*
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
